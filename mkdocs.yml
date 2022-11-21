@@ -1,1 +1,7 @@
-site_name: My Docs
+site_name: GIHMET2022 Adaptive Sequecing Pipeline
+
+nav:
+    - Home: index.md
+
+theme:
+    name: material
