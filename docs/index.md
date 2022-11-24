@@ -1,6 +1,4 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Metagenomic Community Profiles from Enrichment Protocols and Nanopore Adaptive Sequencing 
 
 ## Commands
 

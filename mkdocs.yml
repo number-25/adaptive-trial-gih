@@ -1,7 +1,9 @@
-site_name: GIHMET2022 Adaptive Sequecing Pipeline
+site_name: GIHMET2022 Adaptive Sequencing Pipeline
 
 nav:
     - Home: index.md
 
 theme:
     name: material
+    palette:
+      accent: deep purple
