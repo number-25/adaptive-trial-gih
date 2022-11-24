@@ -3,7 +3,75 @@ site_name: GIHMET2022 Adaptive Sequencing Pipeline
 nav:
     - Home: index.md
 
+# Theme settings - with night/day toggle 
 theme:
-    name: material
-    palette:
-      accent: deep purple
+  name: material
+  logo: img/dna-logo.png
+  favicon: img/dna-favicon.ico
+  repo_url: https://github.com/number-25/adaptive-trial-gih 
+  repo_name: gih/adaptiveseq
+  features: 
+    - navigation.tabs   # navigation tabs at top of page
+    - navigation.tabs.sticky    # navigation tabs are stuck and don't hide
+    - navigation.instant    # instant loading
+    - toc.integrate   # table-of-contents is formatted nicely
+    - navigation.top    # 'go back to top' box can be clicked
+    - search.suggest    # search suggestions 
+  extra_javascript:
+    - javascripts/feedback.js # feedback widget enabled 
+    - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+    - javascripts/tablesort.js
+      # Extras below
+  extra:
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            GIH values your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  markdown_extensions:
+    - footnotes   # Allow footnotes
+    - pymdownx.caret  # Super-sub scripting, crossing out, underlining etc. 
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.critic
+    - pymdownx.details    # Allows collapsible "notes" blobs to be embedded 
+    - pymdownx.highlight:
+        anchor_linenums: false
+        use_pygments: true
+        auto_title: true # auto-title for code blocks 
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.smartsymbols
+  social:   # footer links 
+    - icon: fontawesome/solid/house
+      link: https://gih.uq.edu.au/
+      name: University of Queensland
+  generator: false
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
