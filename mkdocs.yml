@@ -1,5 +1,15 @@
-site_name: Genome Innovation Hub Adaptive Sequencing Pipeline
+# Project Information
+site_name: Genome Innovation Hub Metagenomic Enrichment Sequencing Work
+site_author: Dean Basic
+site_description: Project pipeline for the Genome Innovation Hub's collaboration with the Sev. lab. 
 
+# Repository
+icon:
+    repo: fontawesome/brands/git-alt
+repo_url: https://github.com/number-25/adaptive-trial-gih 
+repo_name:  gih/metagenomics-enrichment
+
+# Site structure 
 nav:
     - Home: index.md
     - Wet Lab: 
@@ -13,15 +23,13 @@ nav:
       - 'More': 'etc'
     - Data:
       - 'Data': 'data.md'
+
+
 # Theme settings - with night/day toggle 
 theme:
   name: material
   logo: img/dna-logo.png
   favicon: img/dna-favicon.ico
-  icon:
-    repo: fontawesome/brands/git-alt
-  repo_url: https://github.com/number-25/adaptive-trial-gih 
-  repo_name: gih/adaptiveseq
   features: 
     - navigation.tabs   # navigation tabs at top of page
     - navigation.tabs.sticky    # navigation tabs are stuck and don't hide
@@ -29,17 +37,36 @@ theme:
     - toc.integrate   # table-of-contents is formatted nicely
     - navigation.top    # 'go back to top' box can be clicked
     - search.suggest    # search suggestions 
-  extra_javascript:
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+# Site config         
+# Javascript
+extra_javascript:
     - javascripts/feedback.js # feedback widget enabled 
     - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
     - javascripts/tablesort.js
-      # Extras below
-  extra:
-    social:   # footer links
-      - icon: fontawesome/solid/house
-        link: https://gih.uq.edu.au
-        name: University of Queensland
-    generator: false
+
+# Extras below
+extra:
+  social:   # footer links
+    - icon: fontawesome/solid/house
+      link: https://gih.uq.edu.au
+      name: University of Queensland
    # analytics: 
     #feedback:
     # title: Was this page helpful?
@@ -55,10 +82,12 @@ theme:
     #     note: >- 
     #       GIH values your feedback! Help us improve this page by
     #       using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-  plugins:
-    - search
-    - mkdocs_pymdownx_material_extras
-  markdown_extensions:
+  #plugins:
+    #- search
+    #  - mkdocs_pymdownx_material_extras
+
+# extensions 
+markdown_extensions:
     - toc:
         permalink: true
     - footnotes   # Allow footnotes
@@ -76,21 +105,4 @@ theme:
     - pymdownx.smartsymbols
 
 
-  palette: 
-    # Palette toggle for light mode
-    - scheme: default
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
 
