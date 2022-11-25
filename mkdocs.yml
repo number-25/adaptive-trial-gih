@@ -1,13 +1,25 @@
-site_name: GIHMET2022 Adaptive Sequencing Pipeline
+site_name: Genome Innovation Hub Adaptive Sequencing Pipeline
 
 nav:
     - Home: index.md
-
+    - Wet Lab: 
+      - 'Mock Community': 'wet-lab/Mock-Community-Structure.md'
+      - 'DNA Extraction and Purification': 'DNA-extraction.md'
+      - 'Flow Cell Parameters': 'flow-cell-details.md' 
+      - 'Library Prep and Sequencing': 'lib-prep-sequencing.md'  
+    - Computational Analysis:
+      - 'Software': 'software-pre.md'
+      - 'Basecalling and QC': 'basecalling-qc.md'
+      - 'More': 'etc'
+    - Data:
+      - 'Data': 'data.md'
 # Theme settings - with night/day toggle 
 theme:
   name: material
   logo: img/dna-logo.png
   favicon: img/dna-favicon.ico
+  icon:
+    repo: fontawesome/brands/git-alt
   repo_url: https://github.com/number-25/adaptive-trial-gih 
   repo_name: gih/adaptiveseq
   features: 
@@ -23,22 +35,32 @@ theme:
     - javascripts/tablesort.js
       # Extras below
   extra:
-  analytics: 
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/thumb-up-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/thumb-down-outline
-          name: This page could be improved
-          data: 0
-          note: >- 
-            GIH values your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+    social:   # footer links
+      - icon: fontawesome/solid/house
+        link: https://gih.uq.edu.au
+        name: University of Queensland
+    generator: false
+   # analytics: 
+    #feedback:
+    # title: Was this page helpful?
+    # ratings:
+    #   - icon: material/thumb-up-outline
+    #     name: This page was helpful
+    #     data: 1
+    #     note: >-
+    #       Thanks for your feedback!
+    #   - icon: material/thumb-down-outline
+    #     name: This page could be improved
+    #     data: 0
+    #     note: >- 
+    #       GIH values your feedback! Help us improve this page by
+    #       using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  plugins:
+    - search
+    - mkdocs_pymdownx_material_extras
   markdown_extensions:
+    - toc:
+        permalink: true
     - footnotes   # Allow footnotes
     - pymdownx.caret  # Super-sub scripting, crossing out, underlining etc. 
     - pymdownx.mark
@@ -52,11 +74,8 @@ theme:
     - pymdownx.superfences
     - pymdownx.inlinehilite
     - pymdownx.smartsymbols
-  social:   # footer links 
-    - icon: fontawesome/solid/house
-      link: https://gih.uq.edu.au/
-      name: University of Queensland
-  generator: false
+
+
   palette: 
     # Palette toggle for light mode
     - scheme: default
