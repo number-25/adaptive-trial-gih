@@ -1,5 +1,5 @@
 # Project Information
-site_name: Genome Innovation Hub Metagenomic Enrichment Sequencing Work
+site_name: Genome Innovation Hub Metagenomic Enrichment Workflow
 site_author: Dean Basic
 site_description: Project pipeline for the Genome Innovation Hub's collaboration with the Sev. lab. 
 
@@ -22,7 +22,7 @@ nav:
       - 'Basecalling and QC': 'basecalling-qc.md'
       - 'More': 'etc'
     - Data:
-      - 'Data': 'data.md'
+      - 'Data': 'data/data.md'
 
 
 # Theme settings - with night/day toggle 
@@ -57,7 +57,7 @@ theme:
 # Site config         
 # Javascript
 extra_javascript:
-    - javascripts/feedback.js # feedback widget enabled 
+    - docs/javascripts/feedback.js # feedback widget enabled 
     - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
     - javascripts/tablesort.js
 
@@ -67,23 +67,27 @@ extra:
     - icon: fontawesome/solid/house
       link: https://gih.uq.edu.au
       name: University of Queensland
-   # analytics: 
-    #feedback:
-    # title: Was this page helpful?
-    # ratings:
-    #   - icon: material/thumb-up-outline
-    #     name: This page was helpful
-    #     data: 1
-    #     note: >-
-    #       Thanks for your feedback!
-    #   - icon: material/thumb-down-outline
-    #     name: This page could be improved
-    #     data: 0
-    #     note: >- 
-    #       GIH values your feedback! Help us improve this page by
-    #       using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-  #plugins:
-    #- search
+  analytics: 
+    feedback:
+     title: Was this page helpful?
+     ratings:
+       - icon: material/thumb-up-outline
+         name: This page was helpful
+         data: 1
+         note: >-
+           Thanks for your feedback!
+       - icon: material/thumb-down-outline
+         name: This page could be improved
+         data: 0
+         note: >- 
+           GIH values your feedback! Help us improve this page by
+           using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+# Plugins
+plugins:
+    - search
+    - badges
+      #- print-site
     #  - mkdocs_pymdownx_material_extras
 
 # extensions 
@@ -91,6 +95,7 @@ markdown_extensions:
     - toc:
         permalink: true
     - footnotes   # Allow footnotes
+    - admonition
     - pymdownx.caret  # Super-sub scripting, crossing out, underlining etc. 
     - pymdownx.mark
     - pymdownx.tilde
