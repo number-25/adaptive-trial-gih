@@ -17,7 +17,7 @@ L|Publication|https://www.nature.com/articles/ng1103z|
 
 !!! Abstract
 
-    Although mutation is commonly thought of as a random process, evolutionary
+    ChangeAlthough mutation is commonly thought of as a random process, evolutionary
     studies show that different types of nucleotide substitution occur with
     widely varying rates that presumably reflect biases intrinsic to mutation
     and repair mechanisms1,2,3,4. A strand asymmetry5,6, the occurrence of
