@@ -18,8 +18,8 @@ nav:
       - 'Flow Cell Parameters': 'flow-cell-details.md' 
       - 'Library Prep and Sequencing': 'lib-prep-sequencing.md'  
     - Computational Analysis:
-      - 'Software': 'software-pre.md'
-      - 'Basecalling and QC': 'basecalling-qc.md'
+      - 'Software': 'computational-analysis/software-pre.md'
+      - 'Basecalling and QC': 'computional-analysis/basecalling-qc.md'
     - Data:
       - 'Data': 'data/data.md'
 
