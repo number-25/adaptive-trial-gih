@@ -4,7 +4,7 @@ site_author: Dean Basic
 site_description: Project pipeline for the Genome Innovation Hub's collaboration with the Sev. lab. 
 
 # Repository
-icon:
+icon: 
     repo: fontawesome/brands/git-alt
 repo_url: https://github.com/number-25/adaptive-trial-gih 
 repo_name:  gih/metagenomics-enrichment
