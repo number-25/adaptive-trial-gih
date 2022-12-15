@@ -20,7 +20,6 @@ nav:
     - Computational Analysis:
       - 'Software': 'software-pre.md'
       - 'Basecalling and QC': 'basecalling-qc.md'
-      - 'More': 'etc'
     - Data:
       - 'Data': 'data/data.md'
 
